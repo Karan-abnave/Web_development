@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS Demo </title>
+        <link rel="stylesheet" href="style.css">
+        
+        <style>
+            h2{
+                color: darkblue;
+                text-align: center;
+            }
+            table{
+                width: 60%;
+                border-collapse: collapse;
+                background: pink;
+            }
+            th{
+                background-color:green;
+                color: white;
+            }
+            td,th{
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: darkblue; text-align: center;"> CSS Implementation Demo </h1>
+        <hr size="4" color="darkblue">
+        <h2> Employee Data Table (Styled Via Internal Css) </h2> 
+        <table border="1" align="center">
+            <tr>
+                <th> ID </th>
+                <th> Name </th>
+                <th> Department </th>
+                <th> Status </th>
+            </tr>
+
+            <tr>
+                <td> 101 </td>
+                <td> Rahul </td>
+                <td> Computer </td>
+                <td style="color: green;"> Active </td>
+            </tr>
+
+            <tr>
+                <td> 102 </td>
+                <td> Karan </td>
+                <td> IT </td>
+                <td style="color: green;"> Active </td>
+            </tr>
+
+            <tr>
+                <td> 103 </td>
+                <td> Rohit </td>
+                <td> ENTC </td>
+                <td style="color: red;"> Inactive </td>
+            </tr>
+        </table>
+    </body>
+</html>
