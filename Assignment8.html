@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Simple Calculator </title>
+        <script>
+            function calculate(op)
+            {
+                var a = Number(document.getElementById("num1").value);
+                var b = Number(document.getElementById("num2").value);
+                var result;
+                switch(op)
+                {
+                    case'+':
+                        result = a+b;
+                        break;
+
+                    case'-':
+                        result = a-b;
+                        break;
+
+                    case'*':
+                        result = a*b;
+                        break;
+
+                    case'/':
+                        result = a/b;
+                        break;
+                }
+                document.getElementById("answer").innerHTML = result;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h2> Simple Calculator </h2>
+        Number 1:
+        <input type="text" id="num1">
+        <br><br>
+
+        Number 2:
+        <input type="text" id="num2">
+        <br><br>
+
+        <button onclick="calculate('+')"> Add </button>
+        <button onclick="calculate('-')"> Substract </button>
+        <button onclick="calculate('*')"> Multiply </button>
+        <button onclick="calculate('/')"> Divide </button>
+
+        <h3> Result:
+            <span id="answer"></span>
+        </h3>
+    </body>
+</html>
