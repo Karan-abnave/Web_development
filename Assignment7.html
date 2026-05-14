@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> DOM Demo </title>
+        <style>
+            #box{
+                width: 300px;
+                height: 150px;
+                border: 2px solid black;
+                text-align: center;
+                padding-top: 50px;
+                margin: auto;
+            }
+            button{
+                padding: 10px;
+                margin: 10px;
+            }
+        </style>
+        <script>
+            function changeText()
+            {
+                document.getElementById("box").innerHTML = "Hello World! <br> DOM Manipulation is cool.";
+            }
+            function changeColor()
+            {
+                document.getElementById("box").style.backgroundColor = "yellow";
+            }
+            function hideBox()
+            {
+                document.getElementById("box").style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <h2 align="center"> Java DOM Demo </h2>
+        <div id="box"> Original Text </div>
+        <center>
+            <button onclick="changeText()"> Change Text </button>
+            <button onclick="changeColor()"> Change Color </button>
+            <button onclick="hideBox()"> Hide </button>
+        </center>
+    </body>
+</html>
